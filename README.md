@@ -1,12 +1,21 @@
-## Player Archetypes
+# NBA Player Fantasy Points Analysis
 
-Players are categorized into the following archetypes based on their stats:
-- **Sharpshooter**: 3P% > 70%
-- **Rebounder**: REB > 700
-- **Passer**: AST > 400, TOV < 10
-- **Defensive Specialist**: STL > 150, BLK > 100
-- **Efficient Scorer**: FG% > 48%, 3P% > 40%
-- **Stretch Big**: C or PF, 3P% > 35%, 3PA > 100
-- **Paint Protector**: C or PF, BLK > 90, REB > 250
-- **3 and D Wing**: G or F, 3P% > 35%, STL > 100
-- **Swiss Army Knife**: AST > 200, REB > 200, STL > 80
+This project analyzes NBA player performance data to calculate fantasy points (FP) based on key statistics. The dataset was initially built with data from the 2023 season and has been updated with the latest 2024/2025 season stats.
+
+### Data Process
+
+1. **Fantasy Points Calculation**  
+   We use a specific fantasy scoring system to calculate each player’s fantasy points (FP). The formula takes into account multiple statistics, including:
+   - Points (PTS)
+   - Field Goals Made (FGM)
+   - Assists (AST)
+   - Steals (STL)
+   - Blocks (BLK)
+   - Turnovers (TOV)  
+   Based on these stats, the fantasy points (FP) are calculated for each player.
+
+2. **Position-Based Analysis**  
+   Players are grouped by their position (e.g., PG, SF, C), and the average fantasy points are calculated for each position. This allows us to understand which player positions typically yield the highest fantasy points.
+
+3. **Archetype Classification**  
+   The final step in the analysis involves categorizing players into different archetypes based on their performance stats. This can help fantasy managers identify the type of players who may suit their team strategy.
